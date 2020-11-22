@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/skeleton.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+    <title>Shopping Cart</title>
+</head>
+<body class="container">
+<header class="main-header">
+    <div class="text-right">
+        <a href="#" style="text-decoration: none; color: #333333;" id="cart-icon">
+            <i class="fa fa-shopping-cart" style="font-size:36px"></i>
+        </a>
+
+    </div>
+    <h1 class="text-center band-name band-name-large mt-5" id="page-title">The Coffee Shop</h1>
+</header>
+<section class="text-center container content-section mt-5" id="product-page-content">
+    <h2 class="section-header">Coffee List</h2>
+    <div class="row shop-items mt-5">
+        <div class="col-5 shop-item">
+            <img alt="image op" class="shop-item-image" src="assets/images/Album 1.jpg">
+            <div class="shop-item-details">
+                <div class="title">
+                    <span class="shop-item-title">Set Menu 1</span> <br>
+                    <ul>
+                        <li>১ কাপ দুধ চা</li>
+                        <li>ঝালমুড়ি (১জনের জন্য)</li>
+                    </ul>
+                </div>
+                <span class="shop-item-price">৳40.00</span>
+                <button class="shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="col-5 shop-item">
+            <img alt="image op" class="shop-item-image" src="assets/images/Album 2.jpg">
+            <div class="shop-item-details">
+                <div class="title">
+                    <span class="shop-item-title">Set Menu 2</span> <br>
+                    <ul>
+                        <li>১ কাপ রঙ/দুধ চা</li>
+                        <li>ডিম ঝালমুড়ি (১জনের জন্য)</li>
+                    </ul>
+                </div>
+                <span class="shop-item-price">৳60.00</span>
+                <button class="shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="col-5 shop-item">
+            <img alt="image op" class="shop-item-image" src="assets/images/Album 3.jpg">
+            <div class="shop-item-details">
+                <div class="title">
+                    <span class="shop-item-title">Set Menu 3</span> <br>
+                    <ul>
+                        <li>২ কাপ রঙ/দুধ চা</li>
+                        <li>ডিম ঝালমুড়ি (২জনের জন্য)</li>
+                    </ul>
+                </div>
+                <span class="shop-item-price">৳90.00</span>
+                <button class="shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="col-5 shop-item">
+            <img alt="image op" class="shop-item-image" src="assets/images/Album 4.jpg">
+            <div class="shop-item-details">
+                <div class="title">
+                    <span class="shop-item-title">Set Menu 4</span> <br>
+                    <ul>
+                        <li>২ কাপ মালাই/ঔষধি চা</li>
+                        <li>চিকেন ঝালমুড়ি (২জনের জন্য)</li>
+                    </ul>
+                </div>
+                <span class="shop-item-price">৳150.00</span>
+                <button class="shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section" id="cart-page-content" style="display: none;">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <br>
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn-purchase" type="button">PURCHASE</button>
+    <br>
+    <a id="back-to-home" style="font-size: 15px; font-weight: 700;">Back to Home</a>
+</section>
+
+<script src="assets/js/shoppingCart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-t6I8D5dJmMXjCsRLhSzCltuhNZg6P10kE0m0nAncLUjH6GeYLhRU1zfLoW3QNQDF"
+        crossorigin="anonymous"></script>
+</body>
+</html>
